@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
+.special-offer {
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width:992px) {
+    .special-offer {
+        display: flex !important
+    }
+}
+
+.special-offer .special-offer-image {
+    position: relative;
+    width: 50%;
+    z-index: 1
+}
+
+@media (max-width:991px) {
+    .special-offer .special-offer-image {
+        width: auto;
+        float: none
+    }
+}
+
+.special-offer .special-offer-content {
+    position: relative;
+    width: 55%;
+    margin-left: -5%;
+    margin-top: 5%;
+    float: left;
+    background-color: #f3f4f4;
+    padding: 4rem;
+    z-index: 2
+}
+
+@media (max-width:991px) {
+    .special-offer .special-offer-content {
+        float: none;
+        width: auto;
+        margin-left: 5%;
+        margin-top: -5%;
+        padding: 3rem
+    }
+}
+
+.bg-light .special-offer .special-offer-content,
+.bg-primary-light .special-offer .special-offer-content {
+    background-color: #fff
+}
