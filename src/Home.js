@@ -7,7 +7,6 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 class Home extends React.Component {
     render(props){
-        console.log(this.props.products);
         return (
             <>
             <Navbar />

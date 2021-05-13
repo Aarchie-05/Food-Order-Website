@@ -3,7 +3,7 @@ import '../css/menuNav.css';
 import { Link } from 'react-router-dom';
 class MenuNav extends React.Component {
     render(props){
-        const {head} = this.props;
+        const {head,count,total} = this.props;
         return (
             <>
                 <div className="main">
@@ -15,17 +15,17 @@ class MenuNav extends React.Component {
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link text-dark" to="/">Home <span className="sr-only">(current)</span></Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link className="nav-link text-dark" to="/menu">Menu</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/cart" className="nav-link text-dark">
                                         <i className="fa" style={{fontSize:"27px",color:"#bbc4c6"}}>&#xf07a;</i>
-                                        <span className='badge badge-warning' id='lblCartCount'> {this.props.count} </span><span
-                                            style={{fontSize: "24px",color:"#121518a6"}}> $ {this.props.total}</span>
+                                        <span className='badge badge-warning' id='lblCartCount'> {count} </span><span
+                                            style={{fontSize: "24px",color:"#121518a6"}}> $ {total}</span>
                                     </Link>
                                 </li>
                             </ul>

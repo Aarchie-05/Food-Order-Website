@@ -1,6 +1,7 @@
 const Pizzas = [
     {   
         id:1,
+        qty: 0,
         name: "Italian Pizza",
         price: 14.5,
         description: "Mozarella & Parmagiano",
@@ -8,6 +9,7 @@ const Pizzas = [
     },
     {
         id:2,
+        qty: 0,
         name: "Jabugo Ham",
         price: 20.5,
         description: "Jabugo ham & Cheese",
@@ -15,6 +17,7 @@ const Pizzas = [
     },
     {
         id:3,
+        qty: 0,
         name: "Cesar",
         price: 10,
         description: "Cesar sauce, Toasts",
@@ -22,6 +25,7 @@ const Pizzas = [
     },
     {
         id:4,
+        qty: 0,
         name: "Pizza BBQ",
         price: 8,
         description: "Bacon, BBQ sauce",
@@ -29,6 +33,7 @@ const Pizzas = [
     },
     {
         id:5,
+        qty: 0,
         name: "Pizza Swiss",
         price: 18,
         description: "swiss cheeses",
@@ -36,6 +41,7 @@ const Pizzas = [
     },
     {
         id:6,
+        qty: 0,
         name: "Greek Pizza",
         price: 15,
         description: "Feta cheese, Olives",

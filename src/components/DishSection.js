@@ -4,7 +4,6 @@ import {Pizzas,Soups,Desserts,Indian} from '../data/pizza';
 class DishSection extends React.Component {
 
     render(props){
-        console.log(this.props);
         const category = this.props.category;
         return (
             <>

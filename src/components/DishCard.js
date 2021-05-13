@@ -2,8 +2,7 @@ import React from 'react';
 import '../css/dishCard.css';
 class DishCard extends React.Component {
     render(props){
-        console.log(this.props);
-        const {onAddToCart, product} = this.props;
+        const {product, onAddToCart} = this.props;
         return (
             <div className="card-m">
                     <div className="card__image">
