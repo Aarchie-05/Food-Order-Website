@@ -12,6 +12,7 @@ class DishSection extends React.Component {
                     <div className="row" style={{fontFamily: "'Raleway', sans-serif",borderBottom: "#bbc4c6 solid 1px"}}>
                         <p style={{fontSize: "40px"}}>&nbsp;<span className="dash" style={{color: "#bbc4c6"}}>∘⎯⎯</span>Pizzas<span
                                 className="dash" style={{color: "#bbc4c6"}}>⎯⎯∘</span></p>
+                                
                     </div>
                     <div className="row" style={{marginLeft: "60px"}}>
                         {Pizzas.map((dish) => (

@@ -5,6 +5,7 @@ class Review extends React.Component {
     render(){
         return (
             <>
+            <div style={{float:"right",marginRight: "0px" , width:"50%"}}>
                <figure class="review">
                     <blockquote class="review__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
@@ -18,6 +19,7 @@ class Review extends React.Component {
                     <div class="review__rating">7.8</div>
                     </figcaption>
                 </figure>
+                </div>
             </>
         );
     }
