@@ -21,7 +21,7 @@ class Checkout extends React.Component {
                         </div>
                         <div className="row">
                             <FinalOrder products={products} count={this.props.count} total={this.props.total} />
-                            <Form />
+                            <Form total={this.props.total} />
                         </div>
                    </div>
                </section>

@@ -57,6 +57,17 @@
   top: -30px;
   left: 9rem;
 }
+@keyframes arrow-spin {
+  100% {
+    transform: rotate(179deg);
+  }
+}
+
+@-webkit-keyframes arrow-spin {
+  100% {
+    -webkit-transform: rotate(179deg);
+  }
+}
 
 .psoload,
 .psoload *,
@@ -70,8 +81,8 @@
 .psoload {
   position: relative;
   margin: 30px auto;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
 }
 
 .psoload .straight,
@@ -91,7 +102,7 @@
   content: '';
   position: absolute;
   width: 15%;
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid rgba(238, 238, 238, 0.637);
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
@@ -110,8 +121,8 @@
 .psoload .curve:after {
   content: '';
   position: absolute;
-  width: 45px;
-  height: 10px;
+  width: 42px;
+  height: 8px;
   border: solid 3px transparent;
   border-top-color: #eee;
   border-radius: 50%/10px 10px 0 0;
@@ -174,17 +185,6 @@
   right: 12px;
   transform: rotate(-48deg);
   -webkit-transform: rotate(-48deg);
-}
-@keyframes arrow-spin {
-  100% {
-    transform: rotate(179deg);
-  }
-}
-
-@-webkit-keyframes arrow-spin {
-  100% {
-    -webkit-transform: rotate(179deg);
-  }
 }
 .extra h1 {
   position: relative;

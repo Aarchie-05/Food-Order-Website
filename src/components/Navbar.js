@@ -44,7 +44,7 @@ class Navbar extends React.Component {
     render(){
         return (
           <>
-            <div id="myNav" className="overlay" style={ this.state.myNav }>
+            {/* <div id="myNav" className="overlay" style={ this.state.myNav }>
                 <a href="" className="closebtn" onClick={this.closeNav} style={{cursor: 'pointer'}}>&times;</a>
                 <div className="overlay-content">
                     <a href="#">About</a>
@@ -53,7 +53,7 @@ class Navbar extends React.Component {
                     <a href="#">Contact</a>
                 </div>
                 </div>
-            <span onClick={this.openNav} className="open">&#9776;</span>
+            <span onClick={this.openNav} className="open">&#9776;</span> */}
             <header>
                 <div className="overlay"></div>
                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -70,7 +70,7 @@ class Navbar extends React.Component {
                                 <div className="center"></div>
                                 <div className="inner"></div>
                             </div>
-                            <button className="btn btn-danger head-btn" onClick={ this.openNav }>Explore...</button>&nbsp;&nbsp;<Link to="/menu"  className="btn btn-info head-btn">Order Now..</Link>
+                            <a className="btn btn-danger head-btn" href="#about">Explore...</a>&nbsp;&nbsp;<Link to="/menu"  className="btn btn-info head-btn">Order Now..</Link>
                         </div>
                     </div>
                 </div>
