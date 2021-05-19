@@ -1,25 +1,76 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import people from './data';
 import '../css/review.css';
-class Review extends React.Component {
-    render(){
-        return (
-            <>
-               <figure className="review mt-4 mb-4">
-                    <blockquote class="review__text">
-                    The food is excellent, generous portions and great prices. The service was fast and friendly. I highly recommended it
-                    </blockquote>
-                    <figcaption class="review__person">
-                    <img src="http://alexsommers.com/codepen/user-6.jpg" alt="User 1" class="review__photo" />
-                    <div class="review__info">
-                        <p class="review__info--name">Nikki Smith</p>
-                        <p class="review__info--date"> April 26, 2020</p>
-                    </div>
-                    <div class="review__rating">7.8</div>
-                    </figcaption>
-                </figure>
-            </>
-        );
+import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
+const Review = () => {
+  const [index, setIndex] = useState(0);
+  const { name, job, image, text } = people[index];
+  const checkNumber = (number) => {
+    if (number > people.length - 1) {
+      return 0;
     }
-}
+    if (number < 0) {
+      return people.length - 1;
+    }
+    return number;
+  };
+  const nextPerson = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+  };
+  const prevPerson = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return checkNumber(newIndex);
+    });
+  };
+  const randomPerson = () => {
+    let randomNumber = Math.floor(Math.random() * people.length);
+    if (randomNumber === index) {
+      randomNumber = index + 1;
+    }
+    setIndex(checkNumber(randomNumber));
+  };
+
+  return (
+      <div id="dibbi">
+    <main style={{marginLeft:'500px'}}>
+    <section className='a container' >
+      <div className='b title'>
+        <h2>our reviews</h2>
+        <div className='c underline'></div>
+      </div>
+
+     
+
+    <article className='d review'>
+      <div className='img-container e'>
+        <img src={image} alt={name} className='f person-img' />
+        <span className='g quote-icon'>
+          <FaQuoteRight />
+        </span>
+      </div>
+      <h4 className='h author'>{name}</h4>
+      <p className='i job'>{job}</p>
+      <p className='k info'>{text}</p>
+      <div className='l button-container'>
+        <button className='m prev-btn' onClick={prevPerson}>
+          <FaChevronLeft />
+        </button>
+        <button className='n next-btn' onClick={nextPerson}>
+          <FaChevronRight />
+        </button>
+      </div>
+      
+    </article>
+    
+          
+    </section>
+    </main>
+    </div>
+  );
+};
+
 export default Review;
