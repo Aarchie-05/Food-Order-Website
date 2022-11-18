@@ -10,10 +10,10 @@ class Footer extends React.Component {
                          <div class="footer-col">
                             <h4>Our Team</h4>
                             <ul>
-                                <li><a href="https://www.linkedin.com/in/aarchie-girdhar-0038651a6/">Aarchie Girdhar</a></li>
-                                <li><a href="https://www.linkedin.com/in/rashmi-3209121a7/">Rashmi</a></li>
-                                <li><a href="https://www.linkedin.com/in/divyanshi-bajpai-a6114a13a/">Divyanshi Bajpai</a></li>
-                                <li><a href="https://www.linkedin.com/in/sofia-singla-943ab8184/">Sofia Singla</a></li>
+                                <li><a href="https://www.linkedin.com/in/aarchie-girdhar-0038651a6/">Gauri Arora</a></li>
+//                                 <li><a href="https://www.linkedin.com/in/rashmi-3209121a7/">Rashmi</a></li>
+//                                 <li><a href="https://www.linkedin.com/in/divyanshi-bajpai-a6114a13a/">Divyanshi Bajpai</a></li>
+//                                 <li><a href="https://www.linkedin.com/in/sofia-singla-943ab8184/">Sofia Singla</a></li>
                             </ul>
                         </div>
                         <div class="footer-col">
